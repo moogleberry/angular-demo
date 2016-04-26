@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="indexController">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+	<!--  public/vendor css libraries -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/ui-grid.css">
+	<link rel="stylesheet" href="assets/js/angular/angular-csp.css">
+
+	<!-- our css libraries; they come last for precedence -->
+	<link rel="stylesheet" href="assets/css/template.css">
+
+	<title>Angular Demo</title>
+</head>
+<body>
+
+	<!-- Main Menu -->
+	<nav class="navbar navbar-default" role="navigation" ng-cloak>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#/" class="navbar-brand">Angular Demo</a>
+			</div>
+
+			<ul class="nav navbar-nav navbar-right">
+				<!-- angular needs the # in front of route names to accommodate non-html5 browsers -->
+				<li><a href="#/">Home</a></li>
+				<li><a href="#bindingDemo">Binding Demo</a></li>
+				<li><a href="#toolsDemo">Tools Demo</a></li>
+				<li><a href="#directivesDemo">Directives Demo</a></li>
+				<li><a href="#servicesDemo">Services Demo</a></li>
+				<li><a href="#inheritanceDemo">Inheritance Demo</a></li>
+				<li><a href="test/SpecRunner.html">Jasmine</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Main UI View; will be replaced with the contents of the current ngRoute -->
+	<div ng-view ng-cloak></div>
+
+	<!-- Public/vendor JavaScript Libraries -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/angular/angular.js"></script>
+	<script src="assets/js/angular/angular-route.js"></script>
+
+	<script src="assets/js/ui-bootstrap.js"></script>
+	<script src="assets/js/ui-grid.js"></script>
+
+	<!-- Our Javascript Files -->
+	<script src="app/app.js"></script>
+	<script src="app/bindingDemo/bindingDemoController.js"></script>
+	<script src="app/toolsDemo/toolsDemoController.js"></script>
+	<script src="app/directivesDemo/directivesDemoController.js"></script>
+	<script src="app/servicesDemo/servicesDemoController.js"></script>
+	<script src="app/inheritanceDemo/inheritanceDemoController.js"></script>
+	<script src="app/common/commonDirectives.js"></script>
+	<script src="app/common/commonFilters.js"></script>
+	<script src="app/common/commonServices.js"></script>
+</body>
+</html>

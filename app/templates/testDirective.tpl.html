@@ -1,0 +1,11 @@
+<div>
+	<label>This is in a directive:</label>
+	
+	<button class="btn btn-default" ng-click="addItem(data)">
+		Add Item
+	</button>
+
+	<div ng-repeat="item in dataList track by $index">
+		{{item}}
+	</div>
+</div>

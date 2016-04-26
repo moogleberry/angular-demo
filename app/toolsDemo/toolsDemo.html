@@ -1,0 +1,35 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<h2>
+				Built-in UI tools
+			</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<label>ng-show</label>
+			<section>
+				<button class="btn btn-default"	ng-click="showItem = !showItem">
+					Toggle Visibility
+				</button>
+
+				<span ng-show="showItem">
+					You can toggle my visibility
+				</span>
+			</section>
+
+			<hr/><hr/>
+
+			<label>ng-repeat</label>
+
+			<table class="table table-striped">
+				<tr ng-repeat="data in tableData">
+					<td>{{data.name}}</td>
+					<td>{{data.value}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,36 @@
+/* position header and footer IDs */
+#header {
+	top: 0px;
+	left: 0;
+	position: relative;
+	z-index: 999 !important;
+	width: 100%;
+}
+#footer {
+	bottom: 0px;
+	left: 0;
+	position: fixed;
+	z-index: 999 !important;
+	width: 100%;
+}
+
+/* smart table: adds up/down arrows to sorted table headers */
+.st-sort-ascent:after {
+	content: '\25B2';
+}
+.st-sort-descent:after {
+	content: '\25BC';
+}
+
+/* override bootstrap's pagination sizes to fit better in a panel footer, 
+	and maintain constant size up to three digits */
+span.pagination.btn-group {
+	margin: 0px;
+}
+span.pagination > button {
+	min-width:45px;
+}
+
+.pointer {
+	cursor: pointer;
+}

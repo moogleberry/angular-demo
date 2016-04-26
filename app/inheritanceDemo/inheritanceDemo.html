@@ -1,0 +1,35 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<h2>
+				Javascript Inheritance (not just Angular)
+			</h2>
+
+			<section>
+				<label>This is a literal: {{myLiteral}}</label>
+
+				<div>This ng-repeat creates its own child scope.</div>
+
+				<div ng-repeat="item in tableData">
+					<button class="btn btn-default" ng-click="myLiteral = item.value">
+						Set the value to {{item.value}}
+					</button>
+				</div>
+			</section>
+
+			<hr/><hr/>
+
+			<section>
+				<label>This is an object property: {{myObject.value}}</label>
+
+				<div>This ng-repeat creates its own child scope.</div>
+
+				<div ng-repeat="item in tableData">
+					<button class="btn btn-default" ng-click="myObject.value = item.value">
+						Set the value to {{item.value}}
+					</button>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
